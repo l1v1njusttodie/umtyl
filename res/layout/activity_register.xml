@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBgColor"
+    tools:context=".Register">
+
+    <EditText
+        android:id="@+id/fullnameEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_rectangle_2207"
+        android:background="@drawable/ic_rectangle_2207"
+        android:fontFamily="@font/days_one"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="15dp"
+        android:hint="Name"
+        android:textSize="19sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+
+        />
+
+
+
+    <EditText
+        android:id="@+id/emailEt"
+        android:background="@drawable/ic_rectangle_2207"
+        android:fontFamily="@font/days_one"
+        android:paddingLeft="15dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="19sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/fullnameEt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_rectangle_2207"/>
+
+    <EditText
+        android:id="@+id/passwordEt"
+        android:background="@drawable/ic_rectangle_2207"
+        android:fontFamily="@font/days_one"
+        android:paddingLeft="15dp"
+        android:hint="Password"
+        android:textSize="19sp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailEt"
+        app:srcCompat="@drawable/ic_rectangle_2207"/>
+
+    <EditText
+        android:id="@+id/confpasswordEt"
+        android:background="@drawable/ic_rectangle_2207"
+        android:fontFamily="@font/days_one"
+        android:paddingLeft="15dp"
+        android:hint="Confirm password"
+        android:textSize="19sp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passwordEt"
+        app:srcCompat="@drawable/ic_rectangle_2207" />
+
+    <Button
+        android:id="@+id/createBtn"
+        android:layout_width="191dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="158dp"
+        android:background="@drawable/ic_rectangle_15"
+        android:fontFamily="@font/days_one"
+        android:text="Create"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:fontFamily="@font/days_one"
+        android:text="Registration"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:fontFamily="@font/days_one"
+        android:text="FIll in all the fields to register"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="88dp"
+        android:fontFamily="@font/days_one"
+        android:text="Already have an account?"
+        android:textColor="@color/alrhave"
+        android:textSize="19sp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="88dp"
+        android:fontFamily="@font/days_one"
+        android:text="Log in"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toEndOf="@+id/textView4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
